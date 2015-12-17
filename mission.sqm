@@ -1,0 +1,478 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"aia_chernarus_config",
+		"rhsusf_c_troops",
+		"aia_misc_e_config",
+		"A3_Structures_F_Mil_Shelters",
+		"RHS_US_A2_AirImport",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"rhs_c_troops"
+	};
+	addOnsAuto[]=
+	{
+		"rhsusf_c_troops",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"rhs_c_troops",
+		"aia_misc_e_config",
+		"A3_Structures_F_Mil_Shelters",
+		"RHS_US_A2_AirImport",
+		"aia_chernarus_config"
+	};
+	randomSeed=13687485;
+	class Intel
+	{
+		briefingName="Operation Blue Invasion";
+		overviewText="We are designated a special forces tasks to bring down the enemies which are controlling the area. ";
+		startWeather=0.25;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.25;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2022;
+		month=1;
+		day=1;
+		hour=11;
+		minute=35;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=10;
+				class Item0
+				{
+					position[]={12083.942,158.8,12638.101};
+					azimut=19.9188;
+					id=0;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_teamleader";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					text="team_leader";
+					init="this setGroupID [""Alpha""];";
+					description="Recon Team Leader";
+				};
+				class Item1
+				{
+					position[]={12081.502,158.8,12642.043};
+					azimut=201.94852;
+					id=1;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_squadleader";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="squad_leader";
+					description="Alpha 1-1 Squad Leader";
+				};
+				class Item2
+				{
+					position[]={12083.521,158.8,12642.922};
+					azimut=201.94852;
+					id=2;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_machinegunner";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="machine_gunner";
+					description="Machine Gunner";
+				};
+				class Item3
+				{
+					position[]={12085.848,158.8,12643.277};
+					azimut=201.94852;
+					id=3;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="auto_rifleman";
+					description="Autorifleman";
+				};
+				class Item4
+				{
+					position[]={12087.047,158.8,12642.644};
+					azimut=201.94852;
+					id=4;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_javelin";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="at_specialist";
+					description="AT Specialist";
+				};
+				class Item5
+				{
+					position[]={12087.714,158.8,12642.168};
+					azimut=201.94852;
+					id=5;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_engineer";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="engineer";
+					description="Engineer";
+				};
+				class Item6
+				{
+					position[]={12088.438,158.8,12641.28};
+					azimut=201.94852;
+					id=6;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_explosives";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="explosive_specialist";
+					description="Explosive Specialist";
+				};
+				class Item7
+				{
+					position[]={12089.405,158.8,12640.955};
+					azimut=201.94852;
+					id=7;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_marksman";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="marksman";
+					description="Marksman";
+				};
+				class Item8
+				{
+					position[]={12090.202,158.8054,12639.926};
+					azimut=201.94852;
+					id=8;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_medic";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="combat_medic";
+					description="Combat Medic";
+				};
+				class Item9
+				{
+					position[]={12090.251,158.80672,12638.44};
+					azimut=201.94852;
+					id=9;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_medic";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="combat_medic2";
+					description="Combat Medic - 2";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12873.562,207.254,15875.369};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="#adminLogged";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="Admin";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=10;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12766.238,6,9630.7305};
+					azimut=110.41772;
+					id=11;
+					side="CIV";
+					vehicle="C_man_polo_5_F_euro";
+					leader=1;
+					skill=0.60000002;
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""U_Marshal"";  this addVest ""V_Press_F"";  this addHeadgear ""H_Cap_press"";  this addGoggles ""G_Spectacles"";    comment ""Add weapons"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this linkItem ""ItemGPS"";    comment ""Set identity"";  this setFace ""GreekHead_A3_01"";  this setSpeaker ""Male06GRE"";  ";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11945.447,54.008205,9103.3584};
+					azimut=121.71297;
+					offsetY=13;
+					id=12;
+					side="EAST";
+					vehicle="rhs_vdv_marksman";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12740.043,5.9000001,9589.3926};
+					azimut=19.9188;
+					offsetY=13;
+					id=13;
+					side="EAST";
+					vehicle="rhs_vdv_sergeant";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=5;
+		class Item0
+		{
+			position[]={12092.715,158.87242,12632};
+			azimut=90.2994;
+			id=14;
+			side="EMPTY";
+			vehicle="GunrackUS_EP1";
+			skill=0.60000002;
+			text="ammo_1";
+			init="this allowDamage false; this enableSimulation false; nul = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+		};
+		class Item1
+		{
+			position[]={12089.196,158.8,12632.257};
+			azimut=90.2994;
+			id=15;
+			side="EMPTY";
+			vehicle="GunrackUS_EP1";
+			skill=0.60000002;
+			text="ammo_2";
+			init="this allowDamage false; this enableSimulation false; nul = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+		};
+		class Item2
+		{
+			position[]={12091.496,158.83992,12632.151};
+			azimut=363.32901;
+			id=16;
+			side="EMPTY";
+			vehicle="CamoNet_BLUFOR_open_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item3
+		{
+			position[]={12028.461,158.96677,12688.753};
+			azimut=33.690063;
+			id=17;
+			side="EMPTY";
+			vehicle="RHS_UH60M";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={12046.783,158.8,12680.673};
+			azimut=33.690063;
+			id=18;
+			side="EMPTY";
+			vehicle="RHS_UH60M";
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={12090.964,158.82571,12632.704};
+			name="ammo_pos";
+			text="Arsenal";
+			type="b_unknown";
+			angle=68.420952;
+		};
+		class Item1
+		{
+			position[]={12070.846,158.85699,12636.877};
+			name="respawn_west";
+			text="Respawn West";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={12085.921,158.8,12635.791};
+			a=10;
+			b=10;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="nul = [[[""Karsnostav Airfield"",""<t align='left' shadow='1' size='0.7'>%1</t><br/>""],[""NATO HQ Base"",""<t align='left' shadow='1' size='0.7'>%1</t><br/>""],[""Operation Blue Invasion Briefing"",""<t align='left' shadow='1' size='0.7'>%1</t>""]]] spawn BIS_fnc_typeText;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_chernarus_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_chernarus_config"
+	};
+	randomSeed=10947398;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_chernarus_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_chernarus_config"
+	};
+	randomSeed=7483116;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_chernarus_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_chernarus_config"
+	};
+	randomSeed=3425093;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
